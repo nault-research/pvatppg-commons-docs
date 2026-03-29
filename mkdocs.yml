@@ -1,0 +1,7 @@
+site_name: Commons Test
+site_url: http://naultran.github.io/repo
+theme:
+  name: material
+
+nav:
+- Home: index.md
