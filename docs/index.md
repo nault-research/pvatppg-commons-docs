@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# <b>PVAT PPG Commons</b>
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The PVAT PPG Commons is built to turn individual datasets into a connected, reusable resource. By enforcing structured metadata and consistent standards, it enables data to move beyond single studies and support broader analysis.
 
-## Commands
+## [Visit the data commons!](https://data.pvatppgmsu.com)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## <b>Where to start?</b>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Set up SheetMATE](sheetmate/setup.md)
+- [Understand the data model](concepts/data-model.md)
+- [Submit your first dataset](getting-started/walkthrough.md)
+- [Learn about the FAIR data principles](concepts/data-model.md)
+
+---
+
+### What’s New
+
+#### _March 2026_
+<b>Added</b><br>
+- Initial release of PVAT PPG Commons documentation site
+- New data model fields to capture reproductive cycle information
+
+<b>Changed</b><br>
+
+<b>Fixed</b><br>
+
+<b>Removed</b><br>
+
+---

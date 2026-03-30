@@ -1,7 +1,40 @@
-site_name: Commons Test
-site_url: http://naultran.github.io/repo
+site_name: PVAT PPG Data Commons Documentation
+site_url: https://nault-research.github.io/pvatppg-commons-docs/
 theme:
   name: material
 
+extra_css:
+  - assets/stylesheet/extra.css
+
 nav:
-- Home: index.md
+  - Home: index.md
+  - Basics of Data Management and Sharing:
+      - What is Metadata?: concepts/metadata.md
+      - Data management planning: concepts/data-model.md
+      - FAIR data principles: concepts/data-model.md
+      - Data Model: concepts/data-model.md
+      - File Organization: submission/file-organization.md
+      - File Formats: submission/formats.md
+  - Submitting (meta)data to the Data Commons:
+      - Data Submission Walkthrough: getting-started/walkthrough.md
+  - Working with SheetMATE:
+      - What is SheetMATE?: sheetmate/index.md
+      - Setup: sheetmate/setup.md
+  - Using the Data Commons:
+      - Web-based interface: concepts/gui_overview.md
+      - API: concepts/api_overview.md
+  - Reference:
+      - FAQ: reference/faq.md
+  - Updates: updates/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
