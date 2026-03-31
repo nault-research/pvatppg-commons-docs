@@ -22,6 +22,26 @@ By the end of this walkthrough, you will:
 
 ---
 
+## Before you start
+
+The PVAT PPG Commons organizes studies with <b>Programs</b> and <b>Projects</b>. Before starting, you and your team should have been assigned both under which all of your studies will be uploaded.
+
+```mermaid
+flowchart TD
+    Program["<b>Program</b>\nAccess control at the highest level (e.g., all PVAT PPG researchers)"]
+    Project["<b>Project</b>\nCollection of studies sharing samples, data, and/or subjects\nPublic data release occurs here"]
+    Study["<b>Study</b>\nIndividual cohort or group of subjects within a project"]
+    Study2["<b>Study 2</b>"]
+
+    Program --> Project
+    Project --> Study
+    Project --> Study2
+```
+
+To request assignment of a program and or project please submit [this form](https://google.com)
+
+---
+
 ## Step 1 — Organize your files
 
 Organize your data into a clear folder structure before starting submission.

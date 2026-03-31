@@ -1,52 +1,30 @@
+
 # What is SheetMATE?
 
-SheetMATE is the primary interface for preparing and organizing metadata for submission to the PVAT PPG Commons.
-
-It provides structured templates and guided workflows that ensure your data is formatted correctly, linked properly, and ready for integration into the commons.
+SheetMATE (Google Sheets–based <b>M</b>etadata <b>A</b>lignment and <b>T</b>emplatization <b>E</b>ngine) is a Google Sheets add-on that streamlines the creation, validation, and submission of structured metadata for PVAT PPG datasets. It is developed to make simplify robust structured metadata collection, entry, and submission to the [PVAT PPG Data Commons](http://data.pvatppgmsu.com).
 
 ---
 
-## Why use SheetMATE?
+## Features
 
-Submitting data to the commons requires:
-
-- consistent structure  
-- defined relationships between entities  
-- standardized terminology  
-
-SheetMATE handles this by:
-
-- generating metadata templates based on the data model  
-- pre-populating identifiers across related templates  
-- guiding you through the correct order of entry  
-- reducing formatting and linking errors  
-
-Without this structure, datasets cannot be reliably linked, shared, or reused.
+- **Google Sheets-based**: Familiar spreadsheet interface with drop-downs and validation.
+- **Template-driven**: Schema-defined templates ensure consistent metadata entry across studies, assays, and labs.
+- **Validation**: Built-in rules check for required fields, controlled vocabularies, and formatting before submission.
+- **Export & Submission**: Convert sheets into structured files that can be uploaded to repositories like ToxDataCommons (Gen3).
+- **Versioning & Reuse**: Templates can be version-controlled, extended, and customized for specific projects.
 
 ---
 
-## What does SheetMATE actually do?
+## Why SheetMATE?
 
-SheetMATE helps you:
+Metadata entry is often a major bottleneck for data reuse. Public repositories may accept datasets but lack the detailed experimental metadata required for reproducibility, integration, and AI-readiness. SheetMATE addresses this gap by:
 
-- define your study and experimental design  
-- describe subjects, samples, and treatments  
-- create a manifest of data files  
-- link datasets to metadata using unique identifiers  
-
-Each step builds on the previous one, ensuring that all components remain connected.
+1. Lowering the barrier for researchers to record rich metadata in a familiar interface.
+2. Enforcing standards through schema-based templates and validation.
+3. Generating machine-readable metadata that can plug directly into modern data commons platforms.
 
 ---
 
-## When should I use it?
-
-You should use SheetMATE when:
-
-- preparing a new dataset for submission  
-- organizing metadata for an existing study  
-- updating or expanding a previously submitted dataset  
-
----
 
 ## Getting started
 
