@@ -6,7 +6,7 @@
 
 ---
 
-## Installing SheetMATE development version
+## <b>Installing SheetMATE development version</b>
 
 1. Request the sheetMATE link from the [PVAT PPG Data Commons team](mailto: naultran@msu.edu).
 2. Click on <u>_Extensions_</u> and select <u>_App Script_</u>
@@ -33,3 +33,23 @@
 
 ---
 
+## <b>Setup sheetMATE profile</b>
+
+1. Go to [PVAT PPG Commons](dev.pvatppgmsu.com) and sign-in.
+<i>Note: PPG members should all have access to the commons via their MSU netid. Contact us if you do not have access</i>
+
+2. Select <b>Profile</b> then <create API key>. 
+   <p align="left">
+     <img src="../../assets/images/apikey_screenshot.png" width="1200" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+3. <b>Download json</b> API key to somewhere you will be able to find it 
+  <span id="download-json"></span>
+  <p align="left">
+    <img src="../../assets/images/apijson_screenshot.png" width="1200" 
+    style="border: 3px solid #ccc; border-radius: 6px;">
+  </p>
+
+
+4. <b> You are ready to [start uploading (meta)data using sheetMATE!](../getting-started/walkthrough.md)</b>

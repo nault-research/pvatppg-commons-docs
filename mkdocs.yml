@@ -2,6 +2,8 @@ site_name: PVAT PPG Data Commons Documentation
 site_url: https://nault-research.github.io/pvatppg-commons-docs/
 theme:
   name: material
+  features:
+  - content.buttons
 
 extra_css:
   - assets/stylesheet/extra.css
@@ -30,6 +32,7 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - attr_list
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

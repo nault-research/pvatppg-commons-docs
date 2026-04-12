@@ -40,9 +40,22 @@ flowchart TD
 
 To request assignment of a program and or project please submit [this form](https://google.com)
 
+## Authenticate Session
+
+In google sheets, after [installing sheetMATE](../sheetmate/setup.md), click on the <i>Gen3DataCommons</i> menu and choose <i>1. Authenticate Session</i>.
+   <p align="left">
+     <img src="../../assets/images/authenticate_screenshot.png" width="300" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+This will open a file upload option where you will drop/upload your [<i>credentials.json</i> file that was obtained ](../sheetmate/setup.md#download-json). <b> You must specify which data commons you are working with and from which the credentials were obtained. Current options are:
+
+- dev.pvatppgmsu.com
+</b>
+
 ---
 
-## Step 1 — Organize your files
+## <b>Step 1</b> — Organize your files
 
 Organize your data into a clear folder structure before starting submission.
 
@@ -56,15 +69,15 @@ Organize your data into a clear folder structure before starting submission.
         └── MetadataFiles
 ```
 
-- **DataFiles** → raw or processed datasets  
-- **MetadataFiles** → SheetMATE templates and manifests  
+- **DataFiles** → raw or processed datasets (see step 2 for preparing your data files).
+- **MetadataFiles** → SheetMATE templates and manifests. You may not have these files already, you will generate them using <i>sheetMATE</i>.
 
 <b>tip:</b>
     This structure is not required, but it simplifies tracking and submission.
 
 ---
 
-## Step 2 — Prepare your data files
+## <b>Step 2</b> — Prepare your data files
 
 A data file is any measurement output that can be linked to a subject or sample.
 
@@ -79,16 +92,42 @@ Common examples include:
 <b>note:</b>
     Each file should correspond to a defined data type (node) in the commons ([see interactive data model](https://data.pvatppgmsu.com/DD)).
 
+<a href="/pvatppg-commons-docs/assets/downloads/test_project_bodyweights.txt" download class="md-button custom-download-btn">
+  Download body weights example (.txt)
+</a>
 ---
 
-## Step 3 — Create a Data File Manifest
+!!! tip "Preferred workflow"
+    This page follows the **Dataset First** path.
 
-The manifest lists all files you plan to upload.
+    The **Metadata First** path is the preferred submission route.  
+    To begin there, go to **Step 6** (link to invisible anchor at step 6 here).
 
-<b>In SheetMATE:</b>
+---
 
-1. Open SheetMATE  
-2. Select: **ToxDataCommons → Create Data File Manifest**  
+## <b>Step 3</b> — Create or load Study
+
+Before beggining to upload (meta)data, sheetMATE needs to know which study you are working with. You can select one, or create one using sheetMATE. 
+
+In sheetMATE, select **Gen3DataCommons → 2. Populate metadata template**  
+   <p align="left">
+     <img src="../../assets/images/populate_screenshot.png" width="400" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+Choose your program, project, and study (do not leave any of them blank). The third option (<i>working node</i>) will only be visible after choosing a study. Here you <b>must select study</b>
+   <p align="left">
+     <img src="../../assets/images/annotated_metadata_screenshot.png" width="600" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+---
+
+## <b>Step 4</b> — Create a Data File Manifest
+
+The _Data File Manifest_ is used to provide the list of data files you would like to upload to a given study. Data files become immediately accessible and can be assigned to subjects and samples later in the process. Each are assigned a persistent identifier that can be shared with others, or can be made discoverable through the _Exploration_ tab. 
+
+In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**  
 
 <b> Required fields:</b>
 
@@ -97,14 +136,58 @@ The manifest lists all files you plan to upload.
 | Exact file name | Assigned project | Data node type (dropdown) | Unique file identifier |
 
 <b>warning:</b>
-    The `type` must match a valid data node (e.g., `weight_measurements`, `slide_image`).
+    The `type` must match a valid data node. Current options are: 
+    
+    - weight_measurements
+    - slide_image
+    - flow_data
+    - clinical_chemistry
+    - cardiovascular_measurement
+    - ms_raw_data
+    - aligned_read
+    - unaligned_read
+
+<i>This has to be entered manually exactly as they are above. A drop-down menu is being repaired</i>
 
 ---
 
-## Step 4 — Populate metadata templates
+## <b>Step 5</b> — Submit to Data Commons
+
+After you've added all the files you plan to submit to the data commons you can submit them to the data commons using sheetMATE. </b>It is possible to add additional files in the future.</b> 
+
+In sheetMATE, select **Gen3DataCommons → 3.1. Submit to Knowledgebase** 
+
+You will be asked to choose the files from your file system. These should have the exact same name as they were entered in the template including the file extension.
+   <p align="left">
+     <img src="../../assets/images/uploadfile_screenshot.png" width="800" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+Once you hit submit, you will be asked to wait until files have all been uploaded and updated in the data commons. This can take several minutes to hours depending on the file size. Do not close your browser as this is being uploaded.
+
+### <b>Confirming succesful submission</b>
+
+Simple: Navigate to [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). Select the <b>Files</b> tab and filter for your file type, project, etc..
+
+Advanced: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query). Use the following query syntax modified for your specific data file.
+
+```
+{
+    weight_measurement {
+        submitter_id
+        studies {
+            submitter_id
+        }
+    }
+}
+```
+
+---
+
+## <b>Step 6</b> — Populate metadata templates (preferred starting point)
 
 1. In SheetMATE, select:  
-   **ToxDataCommons → Populate metadata template**
+   **Gen3DataCommons → 2. Populate metadata template**
 
 2. Complete the Study template
 
@@ -113,7 +196,7 @@ The manifest lists all files you plan to upload.
 Follow the hierarchy when filling out templates:
 
 ```mermaid
-graph TD
+graph LR
 A[Study] --> B[Subject]
 B --> C[Sample]
 C --> D[Aliquot]
@@ -127,7 +210,7 @@ Each step builds on the previous one by using shared identifiers.
 
 ---
 
-## Step 5 — Link metadata to your data files
+## <b>Step 7</b> — Link metadata to your data files
 
 When completing the data-specific template:
 
@@ -139,7 +222,7 @@ When completing the data-specific template:
 
 ---
 
-## Step 6 — Review before submission
+## <b>Step 8</b> — Review before submission
 
 Before submitting, confirm:
 
