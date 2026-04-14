@@ -167,20 +167,42 @@ Once you hit submit, you will be asked to wait until files have all been uploade
 
 ### <b>Confirming succesful submission</b>
 
-Simple: Navigate to [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). Select the <b>Files</b> tab and filter for your file type, project, etc..
+Simple: Navigate to [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). Select the <b>Files</b> tab and filter for your file type, project, etc.. To update the portal the data commons needs to have run code in the backend. This can take several minutes. 
 
-Advanced: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query). Use the following query syntax modified for your specific data file.
+Advanced: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query). Use the following query syntax modified for your specific data file. These changes will appear almost immediately
+
+```
+# replace "study_2fd2c2d9b5" with your own study id
+{
+  study (submitter_id: "study_2fd2c2d9b5") {
+    submitter_id
+    weight_measurements {
+      file_name
+      object_id
+    }
+  }
+}
+```
+Expected result:
 
 ```
 {
-    weight_measurement {
-        submitter_id
-        studies {
-            submitter_id
-        }
-    }
+  "data": {
+    "study": [
+      {
+        "submitter_id": "study_2fd2c2d9b5",
+        "weight_measurements": [
+          {
+            "file_name": "test_project_bodyweights_202604121224.txt",
+            "object_id": "dg.PDC/19acf8ba-ccef-4bac-8321-fcd1944ffeb8"
+          },
+        ]
+      }
+    ]
+  }
 }
 ```
+
 
 ---
 
