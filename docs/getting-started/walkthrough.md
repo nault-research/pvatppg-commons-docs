@@ -139,6 +139,7 @@ In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**
     The file name <u>must</u> include the file extension. For example:
     - rat_body_weights.txt
     - cool_image.png
+    - sequencing_data.fastq.gz
 
 !!! Note Project Note
     This should be the same project id as in the first column of sheet 1
