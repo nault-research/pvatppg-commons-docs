@@ -138,7 +138,7 @@ In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**
 <b>warning:</b>
     The `type` must match a valid data node. Current options are: 
     
-    - weight_measurements
+    - weight_measurement
     - slide_image
     - flow_data
     - clinical_chemistry
@@ -167,7 +167,10 @@ Once you hit submit, you will be asked to wait until files have all been uploade
 
 ### <b>Confirming succesful submission</b>
 
-Simple: Navigate to [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). Select the <b>Files</b> tab and filter for your file type, project, etc.. To update the portal the data commons needs to have run code in the backend. This can take several minutes. 
+Simple: Navigate to the [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). From there, select the **Files** tab and use the available filters (such as file type or project) to find your data.
+
+!!! note
+    Newly uploaded data does not get updated automatically. Contact your Data Commons team to update the portal.
 
 Advanced: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query). Use the following query syntax modified for your specific data file. These changes will appear almost immediately
 
