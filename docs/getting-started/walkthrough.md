@@ -90,7 +90,7 @@ Common examples include:
 - ...  
 
 <b>note:</b>
-    Each file should correspond to a defined data type (node) in the commons ([see interactive data model](https://data.pvatppgmsu.com/DD)).
+    Each file should correspond to a defined data type (node) in the commons ([see interactive data model](https://dev.pvatppgmsu.com/DD)).
 
 <a href="/pvatppg-commons-docs/assets/downloads/test_project_bodyweights.txt" download class="md-button custom-download-btn">
   Download body weights example (.txt)
@@ -125,7 +125,7 @@ Choose your program, project, and study (do not leave any of them blank). The th
 
 ## <b>Step 4</b> — Create a Data File Manifest
 
-The _Data File Manifest_ is used to provide the list of data files you would like to upload to a given study. Data files become immediately accessible and can be assigned to subjects and samples later in the process. Each are assigned a persistent identifier that can be shared with others, or can be made discoverable through the _Exploration_ tab. 
+The _Data File Manifest_ is used to provide the list of data files you would like to upload to a given study. Data files become immediately accessible and can be assigned to subjects and samples later in the process. Each are assigned a persistent identifier that can be shared with others, or can be made discoverable through the [_Exploration_ tab in the Gen3DataCommons](https://dev.pvatppgmsu.com/explorer). 
 
 In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**  
 
@@ -133,9 +133,20 @@ In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**
 
 | file_name | project | type | submitter_id |
 |----------|--------|------|--------------|
-| Exact file name | Assigned project | Data node type (dropdown) | Unique file identifier |
+| Exact file name including the file extension (i.e. rat_body_weights.txt) | Assigned project | Data node type (dropdown) | Unique file identifier |
 
-<b>warning:</b>
+!!! Note File Name Note
+    The file name <u>must</u> include the file extension. For example:
+    - rat_body_weights.txt
+    - cool_image.png
+
+!!! Note Project Note
+    This should be the same project id as in the first column of sheet 1
+
+!!! Note submitter_id Note
+    This should be the same submitter id as in the submitter_id column of sheet 1
+
+!!! warning
     The `type` must match a valid data node. Current options are: 
     
     - weight_measurement
@@ -147,7 +158,9 @@ In sheetMATE, select **Gen3DataCommons → 3.2. Create Data File Manifest**
     - aligned_read
     - unaligned_read
 
-<i>This has to be entered manually exactly as they are above. A drop-down menu is being repaired</i>
+    <i>This has to be entered manually exactly as they are above. A drop-down menu is being repaired</i>
+
+
 
 ---
 
@@ -167,15 +180,18 @@ Once you hit submit, you will be asked to wait until files have all been uploade
 
 ### <b>Confirming succesful submission</b>
 
-Simple: Navigate to the [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). From there, select the **Files** tab and use the available filters (such as file type or project) to find your data.
+<b>Simple</b>: Navigate to the [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). From there, select the **Files** tab and use the available filters (such as file type or project) to find your data.
 
 !!! note
     Newly uploaded data does not get updated automatically. Contact your Data Commons team to update the portal.
 
-Advanced: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query). Use the following query syntax modified for your specific data file. These changes will appear almost immediately
+<b>Advanced</b>: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query) and change to "Graph Mode" using the orange button on the right side. 
+
+Replace the text in the GraphiQL box with the follwing query syntax modified for your specific data file. These changes will appear almost immediately
 
 ```
 # replace "study_2fd2c2d9b5" with your own study id
+# replace "weight_measurements" with the type of data you're looking for
 {
   study (submitter_id: "study_2fd2c2d9b5") {
     submitter_id
