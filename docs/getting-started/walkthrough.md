@@ -231,54 +231,149 @@ Expected result:
 1. In SheetMATE, select:  
    **Gen3DataCommons → 2. Populate metadata template**
 
-2. Complete the Study template
-
-3. Proceed through templates in order
-
-Follow the hierarchy when filling out templates:
+Proceed through templates in order by selecting it in the <b>Target Node Options</b>. Follow the hierarchy from the [data model](https://dev.pvatppgmsu.com/DD) when filling out templates:
 
 ```mermaid
 graph LR
-A[Study] --> B[Subject]
-B --> C[Sample]
+B[Subject] --> C[Sample]
 C --> D[Aliquot]
 D --> E[Data]
 ```
 
-Each step builds on the previous one by using shared identifiers.
+!!! note
+    Each step builds on the previous one by using shared identifiers. Templates must be completed in the correct order to ensure proper linking ([see recommended order](https://google.com)).
 
-<b>important:</b>
-    Templates must be completed in the correct order to ensure proper linking ([see recommended order](https://google.com)).
+Use <b>3.1. Submit to knowledgebase</b> to submit your metadata to the data commons. You can also use <b>4. Download</b> to save a local copy for future use. 
+
+### <b>Confirming succesful submission</b>
+
+<b>Simple</b>: Navigate to the [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). From there, select the **Files** tab and use the available filters (such as file type or project) to find your data.
+
+!!! note
+    Newly uploaded data does not get updated automatically. Contact your Data Commons team to update the portal.
+
+<b>Advanced</b>: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query) and change to "Graph Mode" using the orange button on the right side. 
+
+Replace the text in the GraphiQL box with the follwing query syntax modified for your specific data file. These changes will appear almost immediately
+
+```
+# replace "study_2fd2c2d9b5" with your own study id
+# Inquire with the data commons teams for nodes that are further from the study node
+{
+  study (submitter_id: "study_2fd2c2d9b5") {
+    submitter_id
+		subjects {
+      submitter_id
+    }
+  }
+}
+```
+Expected result:
+
+```
+{
+  "data": {
+    "study": [
+      {
+        "subjects": [
+          {
+            "submitter_id": "RN_1"
+          },
+          {
+            "submitter_id": "RN_2"
+          },
+          {
+            "submitter_id": "RN_3"
+          },
+          {
+            "submitter_id": "RN_4"
+          },
+          {
+            "submitter_id": "RN_5"
+          },
+          {
+            "submitter_id": "RN_6"
+          }
+        ],
+        "submitter_id": "study_2fd2c2d9b5"
+      }
+    ]
+  }
+}
+```
 
 ---
 
 ## <b>Step 7</b> — Link metadata to your data files
 
-When completing the data-specific template:
+To link metadata to your data file you need to keep the file GUID for your records. See <b>Step 5. Confirming successful submission - Advanced</b> for how to discover your GUID. 
+
+From the Gen3DataCommons menu, choose the <b>Target Node Option</b> that matches the <b>type</b> in the data manifest file
 
 - use the **GUID** assigned from the file manifest  
 - do not manually re-enter file metadata  
 
+Use <b>3.1. Submit to knowledgebase</b> to submit your metadata to the data commons. You can also use <b>4. Download</b> to save a local copy for future use. 
+
+### <b>Confirming succesful submission</b>
+
+<b>Simple</b>: Navigate to the [PVAT PPG Data Commons Exploration tab](https://dev.pvatppgmsu.com/explorer). From there, select the **Files** tab and use the available filters (such as file type or project) to find your data.
+
 !!! note
-    The GUID is the key link between your dataset and its metadata.
+    Newly uploaded data does not get updated automatically. Contact your Data Commons team to update the portal.
+
+<b>Advanced</b>: Navigate to [PVAT PPG Data Commons Query tab](https://dev.pvatppgmsu.com/query) and change to "Graph Mode" using the orange button on the right side. 
+
+Replace the text in the GraphiQL box with the follwing query syntax modified for your specific data file. These changes will appear almost immediately
+
+```
+# replace "study_2fd2c2d9b5" with your own study id
+# Inquire with the data commons teams for nodes that are further from the study node
+{
+  study (submitter_id: "study_2fd2c2d9b5") {
+    subjects {
+      submitter_id
+      weight_measurements {
+        submitter_id
+        file_name
+        file_size
+        md5sum
+      }
+    }
+  }
+}
+
+```
+Expected result:
+
+```
+{
+  "data": {
+    "study": [
+      {
+        "subjects": [
+          {
+            "submitter_id": "RN_1",
+            "weight_measurements": [
+              {
+                "file_name": "test_project_bodyweights_202604121224.txt",
+                "file_size": 717,
+                "md5sum": "175506dd86feb9a87ebe4bd8effa2359",
+                "submitter_id": "RN_1_weight"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+```
 
 ---
 
-## <b>Step 8</b> — Review before submission
+## <b>Step 8</b> - Repeat
 
-Before submitting, confirm:
-
-- all required templates are complete  
-- identifiers are consistent across sheets  
-- file names match the manifest exactly  
-
-!!! warning
-    Small inconsistencies (IDs, file names) are the most common source of errors.
-
----
-
-<b>Next steps</b>
-
-- [Set up SheetMATE](../sheetmate/setup.md)  
-- [Learn about the data model](../concepts/data-model.md)  
-- [View submission requirements](../submission/file-organization.md)
+Continue moving through steps 6 - 7 until all the relevant metadata has been uploaded
