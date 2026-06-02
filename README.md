@@ -18,9 +18,9 @@ Program
 
 | Level | Entity | Role |
 |-------|--------|------|
-| 1 | **Program** | Administrative grouping representing a lab, center, or initiative (e.g., `NAULTLAB`, `MSUSRC`, `PVATPPG`). Admin-assigned |
-| 2 | **Project** | A self-contained body of work. The unit of public data release. Admin-assigned. |
-| 3 | **Study** | A subdivision within a Project. Rarely needed. Default to one per Project. |
+| 1 | **Program** | Administrative grouping representing a lab, center, or initiative (e.g., `NAULTLAB`, `MSUSRC`, `PVATPPG`). Admin-assigned. |
+| 2 | **Project** | A self-contained body of work. The unit of public data release (e.g., `PVATPPG-0012`, `MSUSRC-0004`). Admin-assigned. |
+| 3 | **Study** | A subdivision within a Project. Default set to one per Project (e.g., `Main`, `Replication Cohort`). Admin-assigned.|
 
 ---
 
@@ -42,7 +42,7 @@ Programs are administrative. They represent a lab, center, or initiative and ser
 
 ## Project
 
-A Project is the core organizational unit in Gen3. It represents a self-contained body of work and is the level at which data becomes public. All datasets associated with a body of work — weights, RNAseq, metabolomics, etc.,  live together under one Project.
+A Project is the core organizational unit in Gen3. It represents a self-contained body of work and is the level at which data becomes public. All datasets associated with a body of work — weights, RNAseq, metabolomics, etc. — live together under one Project.
 
 **Format:**
 
@@ -67,7 +67,7 @@ PVATPPG-0012
 - **Admin-assigned.** Contact your Data Commons administrator to request a new Project. This prevents numbering collisions and maintains a central registry.
 - **Subjects belong to one Project.** Cross-project subject linking is not supported in Gen3. Define Project boundaries around data that naturally belongs together.
 - **Public release is all-or-nothing at the Project level.** When a Project is made public, all Studies beneath it become public simultaneously. Plan your Project boundaries with this in mind.
-- **Names are permanent.** Renaming a Project after data submission begins is technically complex and may break data references and external links. 
+- **Names are permanent.** Renaming a Project after data submission begins is technically complex and may break data references and external links.
 
 ---
 
@@ -75,16 +75,17 @@ PVATPPG-0012
 
 A Study is a subdivision within a Project. In most cases there will be only one Study per Project. The distinction only matters when a Project contains a clearly separable sub-dataset (e.g., a replication study) that will definitively always be released alongside the main data.
 
-**Default behavior: use one Study per Project.**
+**Default: Only one Study per Project.**
 
-Only create multiple Studies when:
+Multiple Studies are only created when:
+
 - There is a replication or validation dataset that is part of the same Project
 - The sub-dataset has a meaningfully different provenance or design but belongs to the same release unit
 - You are certain it will always be released together with the other Studies in the Project
 
 ### Naming expectations
 
-Studies are named by the submitter. Since Studies are the most granular level, this is where human-readable context lives.
+Studies names are assigned by the administrator, but may be requested by the submitter. Since Studies are the most granular level, this is where human-readable context lives. If you choose to request a Study name:
 
 - Use plain descriptive language — no codes or IDs needed
 - Title Case
@@ -106,7 +107,7 @@ Studies are named by the submitter. Since Studies are the most granular level, t
 |--------|--------|-------------|------------|---------|
 | Program | `ACRONYM` | Administrator | 15 chars | Indirect |
 | **Project** | `[PROGRAM]-[NNNN]` | **Administrator** | 20 chars | **Yes ⚠️** |
-| Study | Descriptive phrase | Submitter | 60 chars | With Project |
+| Study | Descriptive phrase | Administrator | 60 chars | With Project |
 
 ---
 
@@ -114,8 +115,8 @@ Studies are named by the submitter. Since Studies are the most granular level, t
 
 Reach out to your Data Commons administrator with:
 
-1. The **Program** it belongs to
+1. The **Program** it belongs to (e.g., `MSUSRC`, `PVATPPG`)
 2. A brief description of the body of work (used for the internal registry — not the Project name)
 3. Any known Studies you plan to create beneath it
 
-The administrator will assign the next available number, register it, and confirm you can proceed.
+The administrator will assign the next available Project number, register it, and confirm you can proceed.
