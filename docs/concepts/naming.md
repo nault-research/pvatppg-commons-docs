@@ -1,6 +1,6 @@
 # Naming Standards: Program, Project, and Study
 
-The Data Commons organizes data into three levels of hierarchy. Following these naming conventions keeps the commons consistent and navigable for both internal teams and external data consumers.
+The Data Commons organizes data into three levels of hierarchy. Following these naming conventions keeps the Commons consistent and navigable for both internal teams and external data consumers.
 
 ---
 
@@ -15,8 +15,8 @@ Program
 | Level | Entity | Role |
 |-------|--------|------|
 | 1 | **Program** | Administrative grouping representing a lab, center, or initiative (e.g., `NAULTLAB`, `MSUSRC`, `PVATPPG`). Admin-assigned. |
-| 2 | **Project** | A self-contained body of work. The unit of public data release. Admin-assigned. |
-| 3 | **Study** | A subdivision within a Project. Rarely needed. Default to one per Project. |
+| 2 | **Project** | A self-contained body of work. The unit of public data release (e.g., `PVATPPG-0012`, `MSUSRC-0004`). Admin-assigned. |
+| 3 | **Study** | A subdivision within a Project. Default set to one per Project (e.g., `Main`, `Replication Cohort`). Admin-assigned.|
 
 ---
 
@@ -71,9 +71,9 @@ PVATPPG-0012
 
 A Study is a subdivision within a Project. In most cases there will be only one Study per Project. The distinction only matters when a Project contains a clearly separable sub-dataset (e.g., a replication study) that will definitively always be released alongside the main data.
 
-**Default behavior: use one Study per Project.**
+**Default: Only one Study per Project.**
 
-Only create multiple Studies when:
+Multiple Studies are only created when:
 
 - There is a replication or validation dataset that is part of the same Project
 - The sub-dataset has a meaningfully different provenance or design but belongs to the same release unit
@@ -81,7 +81,7 @@ Only create multiple Studies when:
 
 ### Naming expectations
 
-Studies are named by the submitter. Since Studies are the most granular level, this is where human-readable context lives.
+Studies names are assigned by the administrator, but may be requested by the submitter. Since Studies are the most granular level, this is where human-readable context lives. If you choose to request a Study name:
 
 - Use plain descriptive language — no codes or IDs needed
 - Title Case
@@ -103,7 +103,7 @@ Studies are named by the submitter. Since Studies are the most granular level, t
 |--------|--------|-------------|------------|---------|
 | Program | `ACRONYM` | Administrator | 15 chars | Indirect |
 | **Project** | `[PROGRAM]-[NNNN]` | **Administrator** | 20 chars | **Yes ⚠️** |
-| Study | Descriptive phrase | Submitter | 60 chars | With Project |
+| Study | Descriptive phrase | Administrator | 60 chars | With Project |
 
 ---
 
@@ -111,8 +111,8 @@ Studies are named by the submitter. Since Studies are the most granular level, t
 
 Reach out to your Data Commons administrator with:
 
-1. The **Program** it belongs to
+1. The **Program** it belongs to (e.g., `MSUSRC`, `PVATPPG`)
 2. A brief description of the body of work (used for the internal registry — not the Project name)
 3. Any known Studies you plan to create beneath it
 
-The administrator will assign the next available number, register it, and confirm you can proceed.
+The administrator will assign the next available Project number, register it, and confirm you can proceed.
