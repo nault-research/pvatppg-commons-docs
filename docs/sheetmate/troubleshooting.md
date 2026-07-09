@@ -1,8 +1,6 @@
 
 # Troubleshooting SheetMATE
 
-test v2
-
 ??? note "Error: `PERMISSION_DENIED`"
 
     If you see this message while signing in or saving your SheetMATE environment:
