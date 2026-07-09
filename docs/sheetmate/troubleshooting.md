@@ -16,24 +16,24 @@ test v2
     <h3>Try these fixes</h3>
 
     1. Sign out of other Google accounts
-       * If multiple Google accounts are signed in, SheetMATE may choose the wrong account.
-       * Sign out of all accounts, then sign back in with the account you want to use.
+         - If multiple Google accounts are signed in, SheetMATE may choose the wrong account.
+         - Sign out of all accounts, then sign back in with the account you want to use.
 
     2. Use a supported browser
          - Recommended: Chrome or Edge.
          - If you are already on one of these browsers, try opening a new private/incognito window.
 
     3. Clear browser cache and cookies
-       - Clear Chrome/Edge cookies and cache for the SheetMATE site.
-       - Then refresh the page and try again.
+         - Clear Chrome/Edge cookies and cache for the SheetMATE site.
+         - Then refresh the page and try again.
 
     4. Disable browser extensions temporarily
-       - Some privacy or ad-blocking extensions can block authentication or storage access.
-       - Disable any extensions affecting Google sign-in, then retry.
+         - Some privacy or ad-blocking extensions can block authentication or storage access.
+         - Disable any extensions affecting Google sign-in, then retry.
 
     5. Check your account permissions
-       - Make sure the Google account you are using has access to the required SheetMATE resources.
-       - If your organization has restricted permissions, contact your administrator.
+         - Make sure the Google account you are using has access to the required SheetMATE resources.
+         - If your organization has restricted permissions, contact your administrator.
 
     <h3>If the issue continues</h3>
 
