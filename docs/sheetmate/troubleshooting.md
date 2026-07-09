@@ -1,6 +1,8 @@
 
 # Troubleshooting SheetMATE
 
+test v2
+
 ??? note "Error: `PERMISSION_DENIED`"
 
     If you see this message while signing in or saving your SheetMATE environment:
@@ -14,12 +16,12 @@
     <h3>Try these fixes</h3>
 
     1. Sign out of other Google accounts
-       - If multiple Google accounts are signed in, SheetMATE may choose the wrong account.
-       - Sign out of all accounts, then sign back in with the account you want to use.
+       * If multiple Google accounts are signed in, SheetMATE may choose the wrong account.
+       * Sign out of all accounts, then sign back in with the account you want to use.
 
     2. Use a supported browser
-       - Recommended: Chrome or Edge.
-       - If you are already on one of these browsers, try opening a new private/incognito window.
+         - Recommended: Chrome or Edge.
+         - If you are already on one of these browsers, try opening a new private/incognito window.
 
     3. Clear browser cache and cookies
        - Clear Chrome/Edge cookies and cache for the SheetMATE site.
