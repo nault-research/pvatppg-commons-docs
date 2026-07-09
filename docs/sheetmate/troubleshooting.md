@@ -7,11 +7,11 @@
 
     > Failed to save environment: We're sorry, a server error occurred while reading from storage. Error code PERMISSION_DENIED.
 
-    ### What this means
+    <h3>What this means</h3>
 
     This error usually indicates a problem with browser authentication or account permissions when SheetMATE tries to store your session data.
 
-    ### Try these fixes
+    <h3>Try these fixes</h3>
 
     1. Sign out of other Google accounts
        - If multiple Google accounts are signed in, SheetMATE may choose the wrong account.
@@ -33,7 +33,7 @@
        - Make sure the Google account you are using has access to the required SheetMATE resources.
        - If your organization has restricted permissions, contact your administrator.
 
-    ### If the issue continues
+    <h3>If the issue continues</h3>
 
     - Retry after closing and reopening your browser.
     - Try a different device if available.
