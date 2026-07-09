@@ -22,6 +22,7 @@ nav:
   - Working with SheetMATE:
       - What is SheetMATE?: sheetmate/index.md
       - Setup SheetMATE: sheetmate/setup.md
+      - Troubleshooting SheetMATE: sheetmate/troubleshooting.md
   - Using the Data Commons:
       - Web-based interface: concepts/gui_overview.md
       - API: concepts/api_overview.md
