@@ -19,7 +19,7 @@ Program
 | Level | Entity | Role |
 |-------|--------|------|
 | 1 | **Program** | Administrative grouping representing a lab, center, or initiative (e.g., `NAULTLAB`, `MSUSRC`, `PVATPPG`). Admin-assigned. |
-| 2 | **Project** | A self-contained body of work. The unit of public data release (e.g., `PVATPPG-0012`, `MSUSRC-0004`). Admin-assigned. |
+| 2 | **Project** | A self-contained body of work. The unit of public data release (e.g., `PVATPPG_0012`, `MSUSRC_0004`). Admin-assigned. |
 | 3 | **Study** | A subdivision within a Project. Default set to one per Project (e.g., `Main`, `Replication Cohort`). Admin-assigned.|
 
 ---
@@ -47,19 +47,19 @@ A Project is the core organizational unit in Gen3. It represents a self-containe
 **Format:**
 
 ```
-[PROGRAM]-[NNNN]
+[PROGRAM]_[NNNN]
 ```
 
-- Program code prefix, hyphen, zero-padded four-digit sequential number
+- Program code prefix, underscore, zero-padded four-digit sequential number
 - Assigned by the Data Commons administrator
 - Maximum 20 characters
 
 **Examples:**
 
 ```
-NAULTLAB-0001
-MSUSRC-0004
-PVATPPG-0012
+NAULTLAB_0001
+MSUSRC_0004
+PVATPPG_0012
 ```
 
 ### Key rules
@@ -106,7 +106,7 @@ Studies names are assigned by the administrator, but may be requested by the sub
 | Entity | Format | Assigned By | Max Length | Public? |
 |--------|--------|-------------|------------|---------|
 | Program | `ACRONYM` | Administrator | 15 chars | Indirect |
-| **Project** | `[PROGRAM]-[NNNN]` | **Administrator** | 20 chars | **Yes ⚠️** |
+| **Project** | `[PROGRAM]_[NNNN]` | **Administrator** | 20 chars | **Yes ⚠️** |
 | Study | Descriptive phrase | Administrator | 60 chars | With Project |
 
 ---
