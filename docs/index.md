@@ -17,10 +17,9 @@ The PVAT PPG Commons is built to turn individual datasets into a connected, reus
 
 ### What’s New
 
-#### _March 2026_
+#### _July 2026_
 <b>Added</b><br>
-- Initial release of PVAT PPG Commons documentation site      
-- New data model fields to capture reproductive cycle information and gestational age
+- SheetMATE troubleshooting page
 
 <b>Changed</b><br>
 

@@ -26,6 +26,7 @@ nav:
       - API: concepts/api_overview.md
   - Reference:
       - FAQ: reference/faq.md
+      - Troubleshooting SheetMATE: reference/troubleshooting.md
   - Updates: updates/index.md
 
 markdown_extensions:
