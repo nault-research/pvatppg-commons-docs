@@ -12,9 +12,8 @@ nav:
   - Home: index.md
   - Basics of Data Management and Sharing:
       - What is Metadata?: concepts/metadata.md
-      - Data management planning: concepts/data-model.md
-      - FAIR data principles: concepts/data-model.md
       - Data Model: concepts/data-model.md
+      - Naming Standards: concepts/naming.md
       - File Organization: submission/file-organization.md
       - File Formats: submission/formats.md
   - Submitting (meta)data to the Data Commons:
@@ -28,6 +27,7 @@ nav:
       - API: concepts/api_overview.md
   - Reference:
       - FAQ: reference/faq.md
+      - Troubleshooting SheetMATE: reference/troubleshooting.md
   - Updates: updates/index.md
 
 markdown_extensions:
