@@ -17,7 +17,8 @@ nav:
       - File Organization: submission/file-organization.md
       - File Formats: submission/formats.md
   - Submitting (meta)data to the Data Commons:
-      - Data Submission Walkthrough: getting-started/walkthrough.md
+      - Metadata Submission Walkthrough: getting-started/metadata_walkthrough.md
+      - Data Submission Walkthrough: getting-started/data_walkthrough.md
   - Working with SheetMATE:
       - What is SheetMATE?: sheetmate/index.md
       - Setup SheetMATE: sheetmate/setup.md

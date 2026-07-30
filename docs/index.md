@@ -10,7 +10,8 @@ The PVAT PPG Commons is built to turn individual datasets into a connected, reus
 
 - [Set up SheetMATE](sheetmate/setup.md)
 - [Understand the data model](concepts/data-model.md)
-- [Submit your first dataset](getting-started/walkthrough.md)
+- [Submit metadata](getting-started/metadata_walkthrough.md)
+- [Submit data files](getting-started/data_walkthrough.md)
 - [Learn about the FAIR data principles](concepts/data-model.md)
 
 ---
