@@ -17,14 +17,13 @@ By the end of this walkthrough, you will:
 
 - organize your data files  
 - create a data file manifest  
-- populate metadata templates using SheetMATE  
 - link metadata to your datasets  
 
 ---
 
 ## Before you start
 
-The PVAT PPG Commons organizes studies with <b>Programs</b> and <b>Projects</b>. Before starting, you and your team should have been assigned both under which all of your studies will be uploaded.
+The PVAT PPG Commons organizes studies with <b>Projects</b> and <b>Studies</b>. Before starting, you and your team should have been assigned both under which all of your studies will be uploaded.
 
 ```mermaid
 flowchart TD
@@ -38,7 +37,7 @@ flowchart TD
     Project --> Study2
 ```
 
-To request assignment of a program and or project please submit [this form](https://forms.gle/YVq4s6z581GSCeKf8)
+To request assignment of a project and or study please submit [this form](https://forms.gle/YVq4s6z581GSCeKf8)
 
 ### Organize your files
 
@@ -54,7 +53,7 @@ Organize your data into a clear folder structure before starting submission.
         └── MetadataFiles
 ```
 
-- **DataFiles** → raw or processed datasets (see step 2 for preparing your data files).
+- **DataFiles** → raw or processed datasets.
 - **MetadataFiles** → SheetMATE templates and manifests. You may not have these files already, you will generate them using <i>sheetMATE</i>.
 
 <b>tip:</b>
@@ -308,4 +307,4 @@ Expected result:
 
 ## <b>Step 6</b> - Repeat
 
-Repeat step 5 until all the relevant metadata has been uploaded.
+Repeat steps 3-5 until all the relevant data and metadata has been uploaded.

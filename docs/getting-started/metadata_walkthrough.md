@@ -16,8 +16,7 @@ frameborder="0" allowfullscreen></iframe>
 By the end of this walkthrough, you will:
 
 - organize your metadata files
-- populate metadata templates using SheetMATE  
-- link metadata to your datasets  
+- populate metadata templates using SheetMATE
 
 ---
 
@@ -53,7 +52,7 @@ Organize your data into a clear folder structure before starting submission.
         └── MetadataFiles
 ```
 
-- **DataFiles** → raw or processed datasets (see step 2 for preparing your data files).
+- **DataFiles** → raw or processed datasets.
 - **MetadataFiles** → SheetMATE templates and manifests. You may not have these files already, you will generate them using <i>sheetMATE</i>.
 
 <b>tip:</b>
@@ -95,8 +94,7 @@ First, choose your project, then the choose your study and click **Save Selectio
 
 ## <b>Step 3</b> — Populate metadata templates 
 
-1. In SheetMATE, select:  
-   **Gen3DataCommons → 3. Populate metadata template**
+1. In SheetMATE, select: **Gen3DataCommons → 3. Populate metadata template**
 
 Proceed through templates in order by selecting it in the <b>Select node type</b> menu. Follow the hierarchy from the [data model](https://dev.pvatppgmsu.com/DD) when filling out templates:
 
@@ -112,8 +110,7 @@ D --> E[Data]
 
 ## <b>Step 4</b> — Submit metadata to the knowledgebase
 
-1. In SheetMATE, select:  
-   **Gen3DataCommons → 4. Submit metadata**
+1. In SheetMATE, select: **Gen3DataCommons → 4. Submit metadata**
 
 Use <b>4. Submit metadata</b> to submit your metadata to the data commons. You can also use <b>Download active sheet</b> to save a local copy for future use. 
 
