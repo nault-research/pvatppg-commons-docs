@@ -125,7 +125,7 @@ First, choose your project, then the choose your study and click **Save Selectio
 
 The _Data Files Sheet_ is used to provide the list of data files you would like to upload to a given study. Data files become immediately accessible and can be assigned to subjects and samples later in the process. Each are assigned a persistent identifier that can be shared with others, or can be made discoverable through the [_Exploration_ tab in the Gen3DataCommons](https://dev.pvatppgmsu.com/explorer). 
 
-In sheetMATE, select **Gen3DataCommons → Data files -> Create data files sheet**  
+In sheetMATE, select **Gen3DataCommons → Data files → Create data files sheet**  
 
 <b> Required fields:</b>
 
@@ -165,7 +165,7 @@ In sheetMATE, select **Gen3DataCommons → Data files -> Create data files sheet
 
 After you've added all the files you plan to submit to the data commons you can submit them to the data commons using sheetMATE. </b>It is possible to add additional files in the future.</b> 
 
-In sheetMATE, select **Gen3DataCommons → Data files -> Upload data files** 
+In sheetMATE, select **Gen3DataCommons → Data files → Upload data files** 
 
 You will be asked to choose the files from your file system. These should have the exact same name as they were entered in the template including the file extension.
    <p align="left">
