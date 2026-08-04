@@ -35,7 +35,7 @@
 
 ## <b>Setup sheetMATE profile</b>
 
-1. Go to [PVAT PPG Commons](dev.pvatppgmsu.com) and sign-in.
+1. Go to [PVAT PPG Commons](https://dev.pvatppgmsu.com) and sign-in.
 <i>Note: PPG members should all have access to the commons via their MSU netid. Contact us if you do not have access</i>
 
 2. Select <b>Profile</b> then <create API key>. 
@@ -52,4 +52,4 @@
   </p>
 
 
-4. <b> You are ready to [start uploading (meta)data using sheetMATE!](../getting-started/walkthrough.md)</b>
+4. <b> You are ready to [start uploading (meta)data using sheetMATE!](../getting-started/metadata_walkthrough.md)</b>
