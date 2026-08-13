@@ -2,7 +2,7 @@
 
 _This walkthrough guides you through the process of preparing and submitting metadata to the PVAT PPG Commons._
 
-_
+_Use this for most nodes include the Subject, Sample, and Aliquot, nodes. To submit to data file nodes, please refer to the [Data Node Submission Walkthrough](./data_walkthrough.md) for guidance._
 
 ---
 
