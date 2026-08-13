@@ -2,6 +2,8 @@
 
 _This walkthrough guides you through the process of preparing and submitting metadata to the PVAT PPG Commons._
 
+_
+
 ---
 
 ## ▶️ Overview Video
@@ -22,7 +24,7 @@ By the end of this walkthrough, you will:
 
 ## Before you start
 
-The PVAT PPG Commons organizes studies with <b>Programs</b> and <b>Projects</b>. Before starting, you and your team should have been assigned both under which all of your studies will be uploaded.
+The PVAT PPG Commons organizes studies with <b>Projects</b> and <b>Studies</b>. Before starting, you and your team should have been assigned both under which all of your studies will be uploaded.
 
 ```mermaid
 flowchart TD
@@ -36,7 +38,7 @@ flowchart TD
     Project --> Study2
 ```
 
-To request assignment of a program and or project please submit [this form](https://forms.gle/YVq4s6z581GSCeKf8)
+To request assignment of a project and or study please submit [this form](https://forms.gle/YVq4s6z581GSCeKf8)
 
 ### Organize your files
 
@@ -62,14 +64,15 @@ Organize your data into a clear folder structure before starting submission.
 
 ## <b>Step 1</b> — Authenticate Session
 
-In google sheets, after [installing sheetMATE](../sheetmate/setup.md), click on the <i>Gen3DataCommons</i> menu and choose <i>1. Authenticate Session</i>.
+In google sheets, after [setting up sheetMATE](../sheetmate/setup.md), click on the <i>Gen3DataCommons</i> menu and choose <i>1. Authenticate Session</i>.
    <p align="left">
      <img src="../../assets/images/authenticate_screenshot_v2.png" width="300" 
      style="border: 3px solid #ccc; border-radius: 6px;">
    </p>
 
-This will open a file upload option where you will drop/upload your [<i>credentials.json</i> file that was obtained ](../sheetmate/setup.md#download-json). <b> You must specify which data commons you are working with and from which the credentials were obtained. Current options are:
+This will open a file upload option where you will drop/upload your [<i>credentials.json</i> file that was obtained ](../sheetmate/setup.md#download-json). You must specify which data commons you are working with and from which the credentials were obtained. Current options are:
 
+<b>
 - PVAT PPG (Dev/Testing)
 </b>
 
@@ -80,7 +83,7 @@ This will open a file upload option where you will drop/upload your [<i>credenti
 
 ## <b>Step 2</b> — Select Project and Study
 
-Before beginning to upload (meta)data, sheetMATE needs to know which project and study you are working with. 
+Before beginning to upload metadata, sheetMATE needs to know which project and study you are working with. 
 
 In sheetMATE, select **Gen3DataCommons → 2. Select Project and Study**  
 
