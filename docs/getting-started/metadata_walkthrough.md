@@ -111,11 +111,27 @@ D --> E[Data]
 !!! note
     Each step builds on the previous one by using shared identifiers. Templates must be completed in the correct order to ensure proper linking ([see recommended order](https://dev.pvatppgmsu.com/DD)).
 
+Once you select a node type, a list of optional columns will appear. Please check as many columns as possible. The more metadata you provide, the more useful your data will be to other researchers.
+
+   <p align="left">
+     <img src="../../assets/images/generate_template.png" width="600" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+Once you've chosen a node type and selected the columns you want to populate, click **Generate template**. This will create a new sheet with the selected columns.
+
+   <p align="left">
+     <img src="../../assets/images/subject_template.png" width="600" 
+     style="border: 3px solid #ccc; border-radius: 6px;">
+   </p>
+
+The submitter ID column, highlighted in red, is required. This is used to link nodes together. For example, you can have a subject with the submitter ID of "RN_1" and a sample with the submitter ID of "RN_1_sample_1".
+
 ## <b>Step 4</b> — Submit metadata to the knowledgebase
 
 1. In SheetMATE, select: **Gen3DataCommons → 4. Submit metadata**
 
-Use <b>4. Submit metadata</b> to submit your metadata to the data commons. You can also use <b>Download active sheet</b> to save a local copy for future use. 
+Once you're finished filling out the template, use <b>4. Submit metadata</b> to submit your metadata to the data commons. You can also use <b>Download active sheet</b> to save a local copy for future use. 
 
 ### <b>Confirming successful submission</b>
 
