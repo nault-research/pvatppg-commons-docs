@@ -2,6 +2,22 @@
 
 _This walkthrough guides you through the process of preparing and submitting data to the PVAT PPG Commons._
 
+<i>Use this walkthrough to submit to the following data files nodes:
+- Weight Measurements
+- Cardiovascular Measurements
+- Clinical Chemistry
+- Aligned Reads
+- Unaligned Reads
+- Unaligned Read QC
+- Analyzed Data
+- Slide Imaging Data
+- Mass Spectrometry Raw Data
+- Mass Spectrometry Processed Data
+- Flow Cytometry Raw Data
+- Flow Cytometry Processed Data
+
+To submit to other nodes, please refer to the [Metadata Node Submission Walkthrough](./metadata_walkthrough.md) for guidance.</i>
+
 ---
 
 ## ▶️ Overview Video
@@ -16,8 +32,8 @@ frameborder="0" allowfullscreen></iframe>
 By the end of this walkthrough, you will:
 
 - organize your data files  
-- create a data file manifest  
-- link metadata to your datasets  
+- submit your data files to the PVAT PPG Commons 
+- add and link metadata to your submitted data files 
 
 ---
 
@@ -91,7 +107,7 @@ Common examples include:
 
 ## <b>Step 1</b> — Authenticate Session
 
-In google sheets, after [installing sheetMATE](../sheetmate/setup.md), click on the <i>Gen3DataCommons</i> menu and choose <i>1. Authenticate Session</i>.
+In google sheets, after [setting up sheetMATE](../sheetmate/setup.md), click on the <i>Gen3DataCommons</i> menu and choose <i>1. Authenticate Session</i>.
    <p align="left">
      <img src="../../assets/images/authenticate_screenshot_v2.png" width="300" 
      style="border: 3px solid #ccc; border-radius: 6px;">
@@ -109,7 +125,7 @@ This will open a file upload option where you will drop/upload your [<i>credenti
 
 ## <b>Step 2</b> — Select Project and Study
 
-Before beginning to upload (meta)data, sheetMATE needs to know which project and study you are working with. 
+Before beginning to upload data files, SheetMATE needs to know which project and study you are working with. 
 
 In sheetMATE, select **Gen3DataCommons → 2. Select Project and Study**  
 
