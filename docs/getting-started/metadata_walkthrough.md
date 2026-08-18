@@ -79,6 +79,9 @@ This will open a file upload option where you will drop/upload your [<i>credenti
 <b>tip:</b>
     Credentials are valid for 30 days.
 
+<b>note:</b>
+    If you receive an "**Error: Failed to get access token**" message, you may need to re-authenticate your session. Please repeat this step with a newly created credentials.json file. If you continue to have issues, please contact your Data Commons team.
+
 ---
 
 ## <b>Step 2</b> — Select Project and Study
