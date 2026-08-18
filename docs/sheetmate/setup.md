@@ -1,17 +1,9 @@
 
 # Setup SheetMATE
 
-<!-- !!! warning "SheetMATE is in development"
-    SheetMATE is a product in active development. It currently request more permissions than it needs for read/write of google drive and will require approval of permissions. A non-MSU account must be used as MSU will not allow the correct permissions to be provided. We are actively working on limiting the permissions and relocating the code on the server instead of the user account. -->
-
----
-
 ## <b>Getting the link to SheetMATE</b>
 
 1. Request the SheetMATE link from the [PVAT PPG Data Commons team](mailto: naultran@msu.edu).
-
-<!-- 2. Click on the link to SheetMATE.  -->
-<!-- <u>Make sure you are signed in with a non-MSU email.</u>  -->
 
 2. Open the link to SheetMATE and click the <b>Gen3DataCommons</b> menu option on the right. 
    <p align="left">
